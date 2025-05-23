@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
 </head>
+
 <body>
     <header>
         <div class="top-header">
-                <h1 class="project-name">ESHOP</h1>
-                    <p class="location">Україна, м. Київ вул. Святослава Логіки 22, офіс #1</p>
-                    <p class="schedule"><span class="schedule-text">Пн.-Пт.</span>з 09:00 до 19:00</p>
-                    <p class="schedule"><span class="schedule-text">Сб.</span>з 10:00 до 18:00</p>
-                    <p class="mail-header">support@eshop.ua</p>
+            <h1 class="project-name">ESHOP</h1>
+            <p class="location">
+                Україна, м. Київ вул. Святослава Логіки 22, офіс #1
+            </p>
+            <p class="schedule">
+                <span class="schedule-text">Пн.-Пт.</span>з 09:00 до 19:00
+            </p>
+            <p class="schedule">
+                <span class="schedule-text">Сб.</span>з 10:00 до 18:00
+            </p>
+            <p class="mail-header">support@eshop.ua</p>
         </div>
-                <div class="button-header">
-                    <a href="" class="system-block">Системні блоки</a>
-                    <a href="" class="about-the-company">Системні блоки</a>
-                    <a href="" class="contacts">Контакти</a>
-                        <img src="img/icons8-лупа-50.png" class="magnifying-glass">
-                        <img src="img/бела звезда.png" clss="white-star">
-                        <img src="img/icons8-тележка-64.png" class="cart">
-                    <div class="favorites-counter">0</div>
-                    <div class="cart-counter">0</div>
-                </div>
+        <div class="button-header">
+            <a href="" class="system-block">Системні блоки</a>
+            <a href="" class="about-the-company">Системні блоки</a>
+            <a href="" class="contacts">Контакти</a>
+            <button class="magnifying-glass">
+                <img src="img/icons8-лупа-50.png" width="40" height="40" />
+            </button>
+            <button class="white-star">
+                <img src="img/бела звезда.png" width="40" height="40" />
+            </button>
+            <button class="cart">
+                <img src="img/icons8-тележка-64.png" width="40" height="40" />
+            </button>
+            <div class="favorites-counter">0</div>
+            <div class="cart-counter">0</div>
+        </div>
     </header>
     <main>
         <div class="category-pc">
-            
+            <button class="all">Всі</button>
+            <button class="gaming-series">Gaming Series</button>
+            <button class="office-series">Office Series</button>
+        </div>
+        <div class="cards-pc">
+            <h1 class="name-cards-menu">Ігрові комп'ютери</h1>
+            <div class="white-card-pc">
+                <h1 class="name-pc">ESHOP Panzer II v9.6</h1>
+                <p class="class-siries">Gaming Series</p>
+                <p class="cpu">Процесор</p>
+                <p class="cpu-name">Core i5 12400F</p>
+                <p class="gpu">Відеокарта</p>
+                <p class="gpu-name">RTX 4060 8GB Palit Infinity </br>2 OC</p>
+                <p class="memory">Тип пам'яті</p>
+                <p class="memory-name">DDR4</p>
+                <p class="oper-memory">Оперативна пам'ять</p>
+                <p class="hdd">Накопичувач</p>
+                <p class="hdd-name">SSD 1Tb</p>
+                <p class="price">38 901 грн</p>
+                <button class="add-to-cart">Додати у кошик</button>
+                <button class="add-to-favorite">
+                    <img src="img/white-star.svg" width="40" height="40">
+                </button>
+            </div>
         </div>
     </main>
     <script src="script.js"></script>
