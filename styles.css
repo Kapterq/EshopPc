@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+
+body{
+    background-color: #100F0F
+}
+
+.magnifying-glass{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.white-star{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.project-name{
+width: 162px;
+height: 28px;
+font-family: 'Krona One';
+font-style: normal;
+font-size: 25px;
+line-height: 12px;
+color: #FFFFFF;
+}
+
+.top-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding-top: 20px;
+}
+
+.buttons-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+.button-header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 60px;
+    padding-right: 20px;
+}
+
+.cart-counter{
+    position: absolute;
+}
+
+.favorites-counter{
+    position: absolute;
+}
+
+.counter-favorite{
+    display: flex;
+    justify-content: end;
+}
+
+.counter-cart{
+    display: flex;
+    justify-content: end;
+}
