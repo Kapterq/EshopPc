@@ -1,43 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shippori+Antique+B1&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shippori+Antique+B1&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
 
-body{
+body {
     background-color: #100F0F
 }
 
-.magnifying-glass{
+.magnifying-glass {
     position: relative;
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.white-star{
+.white-star {
     position: relative;
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.cart{
+.cart {
     position: relative;
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.project-name{
-width: 162px;
-height: 28px;
-font-family: 'Krona One';
-font-style: normal;
-font-size: 25px;
-line-height: 12px;
-color: #FFFFFF;
+.project-name {
+    width: 162px;
+    height: 28px;
+    font-family: 'Krona One';
+    font-style: normal;
+    font-size: 25px;
+    line-height: 12px;
+    color: #FFFFFF;
 }
 
-.top-header{
+.top-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +47,7 @@ color: #FFFFFF;
     padding-top: 20px;
 }
 
-.buttons-menu{
+.buttons-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +55,7 @@ color: #FFFFFF;
     width: 1800px;
 }
 
-.button-header{
+.button-header {
     position: relative;
     display: flex;
     justify-content: end;
@@ -63,63 +65,63 @@ color: #FFFFFF;
     left: 147px;
 }
 
-.cart-counter{
-position: absolute;
-font-family: 'Inter';
-font-style: normal;
-font-size: 16px;
-color: #FFFFFF;
-width: 19px;
-height: 19px;
-background: #7281E8;
-border-radius: 50%;
-text-indent: 5px;
-font-weight: 300;
+.cart-counter {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 19px;
+    height: 19px;
+    background: #7281E8;
+    border-radius: 50%;
+    text-indent: 5px;
+    font-weight: 300;
 }
 
-.favorites-counter{
-position: absolute;
-font-family: 'Inter';
-font-style: normal;
-font-size: 16px;
-color: #FFFFFF;
-width: 19px;
-height: 19px;
-background: #7281E8;
-border-radius: 50%;
-text-indent: 5px;
-font-weight: 300;
+.favorites-counter {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 19px;
+    height: 19px;
+    background: #7281E8;
+    border-radius: 50%;
+    text-indent: 5px;
+    font-weight: 300;
 }
 
-.counter-favorite{
+.counter-favorite {
     display: flex;
     justify-content: end;
 }
 
-.counter-cart{
+.counter-cart {
     display: flex;
     justify-content: end;
 }
 
-.schedule-text{
-font-family: 'Inter';
-font-style: normal;
-color: #8F8F8F;
-font-size: 14px;
+.schedule-text {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #8F8F8F;
+    font-size: 14px;
 }
 
-.schedule{
-position: relative;
-display: flex;
-font-family: 'Inter';
-font-style: normal;
-font-size: 14px;
-color: #FFFFFF;
-font-weight: 200;
-bottom: 9px;
+.schedule {
+    position: relative;
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 200;
+    bottom: 9px;
 }
 
-.schedule1{
+.schedule1 {
     position: relative;
     display: flex;
     right: 100px;
@@ -131,25 +133,25 @@ bottom: 9px;
     bottom: 9px;
 }
 
-.location{
-position: relative;
-font-family: 'Inter';
-font-style: normal;
-font-size: 14px;
-color: #8F8F8F;
-bottom: 9px;
+.location {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    color: #8F8F8F;
+    bottom: 9px;
 }
 
-.mail-header{
-position: relative;
-font-family: 'Inter';
-font-style: normal;
-font-size: 14px;
-color: #8F8F8F;
-bottom: 9px;
+.mail-header {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    color: #8F8F8F;
+    bottom: 9px;
 }
 
-.contacts{
+.contacts {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -170,9 +172,9 @@ bottom: 9px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
 
-.about-the-company{
+.about-the-company {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -184,7 +186,7 @@ bottom: 9px;
     left: 260px;
 }
 
-.system-block{
+.system-block {
     display: inline-flex;
     left: 55px;
     align-items: center;
@@ -196,7 +198,7 @@ bottom: 9px;
     position: relative;
 }
 
-.about-the-company::before{
+.about-the-company::before {
     content: '';
     display: inline-block;
     width: 25px;
@@ -207,7 +209,7 @@ bottom: 9px;
     background-position: center;
 }
 
-.system-block::before{
+.system-block::before {
     content: '';
     display: inline-block;
     width: 25px;
@@ -216,4 +218,261 @@ bottom: 9px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.buy-menu {
+    justify-content: start;
+    display: flex;
+    width: 950px;
+    height: 800px;
+    background: #150F0F;
+    border: 1px solid #FFFFFF;
+    border-radius: 23px;
+}
+
+.cards-pc{
+    display: flex;
+    justify-content: end;
+    margin-right: 197px;
+}
+
+.white-card-pc{
+    display: flex;
+    position: relative;
+    padding-top: 60px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-pc{
+font-family: 'Shippori Antique B1';
+font-weight: 1;
+font-size: 20px;
+color: #FFFFFF;
+}
+
+.name-cards-menu{
+position: absolute;
+font-family: 'Nunito Sans';
+font-weight: 600;
+font-size: 25px;
+color: #FFFFFF;
+padding-left: 30px;
+}
+
+.class-siries{
+position: relative;
+font-family: 'Roboto';
+font-style: normal;
+font-size: 14px;
+color: #93A0F5;
+bottom: 10px;
+right: 59px;
+text-decoration: none;
+}
+
+.cpu{
+position: relative;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #8F8F8F;
+bottom: 20px;
+right: 18px;
+}
+
+.cpu-img{
+    display: flex;
+    position: relative;
+    right: 80px;
+    bottom: 50px;
+    width: 33px;
+    height: 33px;
+}
+
+.cpu-name{
+position: relative;
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+color: #FFFFFF;
+bottom: 77px;
+right: 4px;
+}  
+
+.gpu{
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8F8F8F;
+    bottom: 90px;
+    right: 14px;
+}
+
+.gpu-name{
+position: relative;
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+color: #FFFFFF;
+bottom: 145px;
+left: 32px;
+}
+
+.gpu-img{
+    display: flex;
+    position: relative;
+    right: 80px;
+    bottom: 120px;
+    width: 33px;
+    height: 33px;
+}
+
+.memory{
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8F8F8F;
+    bottom: 155px;
+    right: 14px;
+}
+
+.memory-name{
+position: relative;
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+color: #FFFFFF;
+bottom: 210px;
+right: 33px;
+}
+
+.memory-img{
+    display: flex;
+    position: relative;
+    right: 80px;
+    bottom: 185px;
+    width: 33px;
+    height: 33px;
+}
+
+.oper-memory{
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8F8F8F;
+    bottom: 223px;
+    left: 20px;
+}
+
+.oper-memory-name{
+position: relative;
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+color: #FFFFFF;
+bottom: 279px;
+right: 9px;
+}
+
+.type-memory-img{
+    display: flex;
+    position: relative;
+    right: 80px;
+    bottom: 255px;
+    width: 33px;
+    height: 33px;
+}
+
+.hdd{
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8F8F8F;
+    bottom: 290px;
+    right: 3px;
+}
+
+.hdd-name{
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    bottom: 345px;
+    right: 20px;
+}
+
+.ssd-img{
+    display: flex;
+    position: relative;
+    right: 80px;
+    bottom: 324px;
+    width: 33px;
+    height: 33px;
+}
+
+.price{
+position: relative;
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 22px;
+color: #FFFFFF;
+}
+
+.add-to-cart{
+position: relative;
+background: #5264DA;
+border-radius: 15px;
+font-family: 'Inter';
+font-weight: 500;
+font-size: 17px;
+border: none;
+line-height: 40px;
+color: #FFFFFF;
+width: 160px;
+bottom: 340px;
+height: 200px;
+cursor: pointer;
+right: 15px;
+}
+
+.add-to-favorite{
+position: relative;
+background: #5264DA;
+border-radius: 15px;
+font-family: 'Inter';
+font-weight: 500;
+padding-left: 6px;
+color: #FFFFFF;
+border: none;
+left: 96px;
+bottom: 383px;
+line-height: 25px;
+cursor: pointer;
+}
+
+.favorite-img{
+    position: relative;
+    top: 2px;
+}
+
+#name-pc-id{
+    position: relative;
+    left: 37px;
+}
+
+.buy-img{
+    position: relative;
+    top: 6px;
+    left: 10px;
 }
