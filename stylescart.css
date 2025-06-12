@@ -249,12 +249,12 @@ body {
 }
 
 .cart-item img {
-    width: 140px; /* увеличил ширину */
-    height: 105px; /* увеличил высоту */
-    object-fit: contain; /* чтобы фото не обрезалось, а вписывалось */
+    width: 140px;
+    height: 105px;
+    object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 0 8px #7281E8;
-    background-color: #222; /* фон чтобы на светлом фоне не было пустот */
+    background-color: #222;
 }
 
 .cart-item h2 {
