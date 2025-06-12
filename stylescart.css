@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shippori+Antique+B1&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shippori+Antique+B1&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+body {
+    background-color: #100F0F
+}
+
+.magnifying-glass {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.white-star {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.project-name {
+    background: url(img/free-icon-dragon-18141482.png) no-repeat left center;
+    background-size: 30px 30px;
+    padding-left: 40px;
+    width: fit-content; 
+    height: 28px;
+    font-family: 'Krona One';
+    font-size: 25px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding-top: 20px;
+}
+
+.buttons-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 260px;
+    width: 1800px;
+}
+
+.button-header {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 40px;
+    left: 147px;
+}
+
+.cart-counter {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 19px;
+    height: 19px;
+    background: #7281E8;
+    border-radius: 50%;
+    text-indent: 5px;
+    font-weight: 300;
+}
+
+.favorites-counter {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 19px;
+    height: 19px;
+    background: #7281E8;
+    border-radius: 50%;
+    text-indent: 5px;
+    font-weight: 300;
+}
+
+.counter-favorite {
+    display: flex;
+    justify-content: end;
+}
+
+.counter-cart {
+    display: flex;
+    justify-content: end;
+}
+
+
+.schedule-text {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #8F8F8F;
+    font-size: 14px;
+}
+
+.schedule {
+    position: relative;
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 200;
+    bottom: 9px;
+}
+
+.schedule1 {
+    position: relative;
+    display: flex;
+    right: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 200;
+    bottom: 9px;
+}
+
+.location {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    color: #8F8F8F;
+    bottom: 9px;
+}
+
+.mail-header {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    color: #8F8F8F;
+    bottom: 9px;
+    left: 50px;
+}
+
+.contacts {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #8F8F8F;
+    text-decoration: none;
+    position: relative;
+    left: 350px;
+}
+
+.contacts::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('img/icons8-телефон-100.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-the-company {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #8F8F8F;
+    text-decoration: none;
+    position: relative;
+    left: 260px;
+}
+
+.system-block {
+    display: inline-flex;
+    left: 55px;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #8F8F8F;
+    text-decoration: none;
+    position: relative;
+}
+
+.about-the-company::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('img/icons8-здание-100.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.system-block::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('img/icons8-компьютер-96.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cart-container {
+    max-width: 900px;
+    margin: 40px auto 20px auto;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #444;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 140px; /* увеличил ширину */
+    height: 105px; /* увеличил высоту */
+    object-fit: contain; /* чтобы фото не обрезалось, а вписывалось */
+    border-radius: 8px;
+    box-shadow: 0 0 8px #7281E8;
+    background-color: #222; /* фон чтобы на светлом фоне не было пустот */
+}
+
+.cart-item h2 {
+    font-size: 20px;
+    font-weight: 600;
+    flex: 1;
+    margin: 0;
+    color: #7281E8;
+}
+
+.cart-item p {
+    margin: 0 12px 0 0;
+    font-size: 15px;
+    color: #ccc;
+    white-space: nowrap;
+}
+
+.cart-item button {
+    background-color: #7281E8;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+    background-color: #5a67d8;
+}
+
+  
+  .cart-summary {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Krona One', sans-serif;
+  }
+  
+  #total-price {
+    font-size: 23px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .cart-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .clear-btn {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .clear-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  .pay-btn {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+  
+  .pay-btn:hover {
+    background-color: #449d44;
+  }
+  
+  @media (max-width: 700px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-item img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .cart-summary {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+  }
+  

@@ -437,21 +437,26 @@ font-size: 22px;
 color: #FFFFFF;
 }
 
-.add-to-cart{
-position: relative;
-background: #5264DA;
-border-radius: 15px;
-font-family: 'Inter';
-font-weight: 500;
-font-size: 17px;
-border: none;
-line-height: 40px;
-color: #FFFFFF;
-width: 160px;
-bottom: 340px;
-height: 200px;
-cursor: pointer;
-right: 15px;
+.add-to-cart {
+    position: relative;
+    background: #5264DA;
+    border-radius: 15px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 17px;
+    border: none;
+    line-height: 40px;
+    color: #FFFFFF;
+    width: 160px;
+    bottom: 340px;
+    height: 200px;
+    cursor: pointer;
+    right: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #3f51c7; 
 }
 
 .add-to-favorite{
@@ -467,6 +472,11 @@ right: 15px;
     bottom: 383px;
     line-height: 25px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-favorite:hover {
+    background-color: #3f51c7; 
 }
 
 .favorite-img{
