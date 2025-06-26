@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylescart.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="styleabout.css" />
 </head>
 <body>
     <header>
@@ -39,7 +38,7 @@
                 <div class="favorites-counter">0</div>
             </div>
             <div class="counter-cart">
-                <button class="cart">
+                <button class="cart" onclick="cardpage()">
                     <img src="img/icons8-тележка-64.png" width="35" height="35" />
                 </button>
                 <div class="cart-counter">0</div>
@@ -48,17 +47,20 @@
     </div>
     </header>
     <main>
-        <section id="cart-container" class="cart-container">
-        </section>
-        <div class="cart-summary">
-          <p id="total-price">Загальна сума: 0 ₴</p>
-          <div class="cart-buttons">
-            <button id="clear-cart-btn" class="btn clear-btn">Очистити корзину</button>
-            <button id="pay-btn" class="btn pay-btn" style="display: none;">Оплатити</button>
-          </div>
-        </div>
-      </main>
-      <footer>
+    <div class="about-page">
+        <h1 class="name-about">Про компанію</h1>
+        <img src="img/banner.jpg" width="950" height="451" class="banner-img">
+        <p class="about-text-one">Компанія <span class="ESHOP-span">ESHOP</span> заснована у 2018 році у Києві. Це перше масштабне підприємство в Україні, що спеціалізується на виробництві кіберспортивної екіпіровки. Задовольнити потреби тих, хто живе грою або тільки знайомиться із віртуальним світом, це головна мета компанії. Наша місія — дати гравцю найкраще обладнання для перемоги.Наша команда щодня аналізує ринок та знає усе про нові технології геймінгу. Дизайнери та інженери попіклувались, щоб ваш комп’ютер відповідав високим стандартам ігрових PC, зберігши при цьому індивідуальний стиль. Виробництво розташовано у Києві, що забезпечує оперативне вирішення будь-яких технічних задач, миттєве реагування на запити клієнтів, а також полегшує та значно прискорює роботу логістики.
+        </p>
+        <p class="about-text-one">Ми активно співпрацюємо з провідними постачальниками комплектуючих, щоб гарантувати клієнтам тільки сертифіковані та надійні продукти. Усі пристрої проходять багаторівневе тестування, що дозволяє виявити навіть найменші недоліки до того, як товар потрапить до покупця.
+
+            ESHOP постійно інвестує в інновації, розробляючи власні рішення для підвищення продуктивності та зручності. Ми створюємо не просто комп’ютери, а інструменти для самореалізації, навчання, роботи та, звісно, перемог у віртуальному світі.
+            
+            Ми також відкриті до індивідуальних замовлень — кожен клієнт може створити унікальну конфігурацію, що відповідатиме його особистим вподобанням та потребам. Професійна команда підтримки завжди готова допомогти на кожному етапі — від вибору до обслуговування.
+        </p>
+    </div>
+    </main>
+    <footer>
         <div class="footer-ul">
             <div class="footer-system-block">
                 <h1 class="footer-title">Системні блоки</h1>
@@ -97,6 +99,6 @@
             <img src="img/f-pay7.svg" width="92" height="13">
         </div>
     </footer>
-    <script src="scriptcart.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

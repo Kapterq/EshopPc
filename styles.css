@@ -516,6 +516,11 @@ color: #FFFFFF;
     font-size: 18px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+.all:hover{
+        color: #5264DA;
 }
 
 .gaming-series{
@@ -524,6 +529,11 @@ color: #FFFFFF;
     font-size: 17px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+.gaming-series:hover{
+    color: #5264DA;
 }
 
 .office-series{
@@ -532,6 +542,11 @@ color: #FFFFFF;
     font-size: 17px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+.office-series:hover{
+    color: #5264DA;
 }
 
 .menu-range-price{
@@ -636,7 +651,140 @@ color: #FFFFFF;
     cursor: pointer;
 }
 
-.white-card-pc:hover{
-    background-color: rgba(68, 101, 129, 0.158);
-    border-radius: 22px;
+ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 }
+  
+li{
+    list-style: none;
+}
+
+.footer-title{
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 27px;
+    color: #FFFFFF;
+}
+
+.footer-ul{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+}
+
+footer{
+    width: 100%;
+    height: 550px;
+}
+
+.bank-img{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    justify-content: center;
+}
+
+.footer-li{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #8F8F8F;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+.shop-footer{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #8F8F8F;
+    text-decoration: none;
+}
+
+.geo-shop{
+    font-family: 'Nunito Sans';
+    font-weight: 200;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.logika-geo{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 14px;
+    color: #93A0F5;
+    cursor: pointer;
+}
+
+.time-footer{
+    font-family: 'Nunito Sans';
+    font-weight: 200;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 5px;
+}
+
+.number-footer{
+    text-decoration: none;
+    font-family: 'Nunito Sans';
+    font-weight: 200;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.five-rate{
+    color: #ffc106;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    top: 15px;
+    left: 52px;
+}
+
+.review{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    color: #8F8F8F;
+    position: relative;
+    bottom: 65px;
+    right: 80px;
+    transition: color 0.3s linear;
+}
+
+.five-star-img{
+    position: relative;
+    left: 30px;
+    bottom: 49px;
+}
+
+.google-geo{
+    position: relative;
+    bottom: 60px;
+}
+
+.lock-site{
+    position: relative;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    color: #8F8F8F;
+    bottom: 50px;
+}
+
+.footer-li:hover{
+    color: #5264DA;
+}
+
+.review:hover{
+    color: #5264DA;
+}
+
