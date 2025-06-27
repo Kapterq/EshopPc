@@ -165,6 +165,7 @@ body {
     text-decoration: none;
     position: relative;
     left: 350px;
+    transition: color 0.3s linear;
 }
 
 .contacts::before {
@@ -188,6 +189,7 @@ body {
     text-decoration: none;
     position: relative;
     left: 260px;
+    transition: color 0.3s linear;
 }
 
 .system-block {
@@ -200,6 +202,7 @@ body {
     color: #8F8F8F;
     text-decoration: none;
     position: relative;
+    transition: color 0.3s linear;
 }
 
 .about-the-company::before {
@@ -258,6 +261,8 @@ font-family: 'Shippori Antique B1';
 font-weight: 1;
 font-size: 20px;
 color: #FFFFFF;
+cursor: pointer;
+transition: color 0.3s linear;
 }
 
 .name-cards-menu{
@@ -307,6 +312,7 @@ font-size: 14px;
 color: #FFFFFF;
 bottom: 77px;
 right: 4px;
+transition: color 0.3s linear;
 }  
 
 .gpu{
@@ -328,6 +334,7 @@ font-size: 14px;
 color: #FFFFFF;
 bottom: 145px;
 left: 32px;
+transition: color 0.3s linear;
 }
 
 .gpu-img{
@@ -358,6 +365,7 @@ font-size: 14px;
 color: #FFFFFF;
 bottom: 210px;
 right: 33px;
+transition: color 0.3s linear;
 }
 
 .memory-img{
@@ -388,6 +396,7 @@ font-size: 14px;
 color: #FFFFFF;
 bottom: 279px;
 right: 9px;
+transition: color 0.3s linear;
 }
 
 .type-memory-img{
@@ -418,6 +427,7 @@ right: 9px;
     color: #FFFFFF;
     bottom: 345px;
     right: 20px;
+    transition: color 0.3s linear;
 }
 
 .ssd-img{
@@ -527,7 +537,7 @@ color: #FFFFFF;
     position: relative;
     font-family: 'Nunito Sans';
     font-size: 17px;
-    color: #FFFFFF;
+    color: #5264DA;
     text-decoration: none;
     transition: color 0.3s linear;
 }
@@ -788,3 +798,122 @@ footer{
     color: #5264DA;
 }
 
+.system-block:hover{
+    color: #5264DA;
+}
+
+.about-the-company:hover{
+    color: #5264DA;
+}
+
+.contacts:hover{
+    color: #5264DA;
+}
+
+.cpu-name:hover{
+    color: gold;
+}
+
+.memory-name:hover{
+    color: gold;
+}
+
+.oper-memory-name:hover{
+    color: gold;
+}
+
+.hdd-name:hover{
+    color: gold;
+}
+
+.gpu-name:hover{
+    color: gold;
+}
+  
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px); /* <- вернул блюр */
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    z-index: 9999;
+  }
+  
+  .modal-box {
+    background-color: #1e1e1e;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #searchInput {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: #2b2b2b;
+    color: white;
+  }
+  
+  .search-results {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .search-card {
+    display: flex;
+    align-items: center;
+    background-color: #2e2e2e;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+  
+  .search-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .search-card-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-card-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .search-card-series {
+    font-size: 14px;
+    color: #aaa;
+  }
+
+.name-pc:hover{
+    color: #5264DA;
+}

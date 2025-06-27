@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="stylecontact.css" />
 </head>
 <body>
     <header>
@@ -47,15 +46,7 @@
     </div>
     </header>
     <main>
-        <div class="contact-page">
-            <h1 class="footer-title" id="h1-cont">Контакти</h1>
-                <p class="shop-footer">Сервісний центр/Магазин:</p>
-                <p class="geo-shop">Україна, м. Київ,<span class="logika-geo"> вул. Святослава<br> Логіки 22, офіс #1</span></p>
-                <p class="time-footer">Пн.-Пт. з 09:00 до 19:00<br>Сб. з 10:00 до 18:00</p>
-                <a href="tel:0999999999" class="number-footer">099 999 99 99</a>
-                <p class="mail">support@eshop.ua</p>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5081.290465518535!2d30.52148060113342!3d50.44770842751289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1750963743122!5m2!1sru!2sua" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-google"></iframe>
+
     </main>
     <footer>
         <div class="footer-ul">
@@ -96,6 +87,13 @@
             <img src="img/f-pay7.svg" width="92" height="13">
         </div>
     </footer>
+    <div id="searchModal" class="modal-overlay">
+        <div class="modal-box">
+          <button id="closeSearchBtn" class="close-btn">×</button>
+          <input type="text" id="searchInput" placeholder="Пошук комп'ютера..." />
+          <div id="searchResults" class="search-results"></div>
+        </div>
+      </div>                     
     <script src="script.js"></script>
 </body>
 </html>

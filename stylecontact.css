@@ -27,15 +27,13 @@
     top: 50px;
 }
 
-.map{
-    display: flex;
-    justify-content: end;
-    padding-right: 100px;
-    position: absolute;
+.map-google{
+   display: flex;
+   position: relative;
+   bottom: 750px;
+   left: 800px;
 }
 
-.map-google{
-    position: relative;
-    left: 900px;
-    bottom: 700px;
+main{
+    height: 1000px;
 }
