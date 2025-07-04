@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="styleabout.css" />
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <a href="index.html" class="project-name">ESHOP</a>
+            <p class="location">
+                Україна, м. Київ вул. Святослава Логіки 22, офіс #1
+            </p>
+            <p class="schedule">
+                <span class="schedule-text">Пн.-Пт. </span>з 09:00 до 19:00
+            </p>
+            <p class="schedule1">
+                <span class="schedule-text">Сб. </span>з 10:00 до 18:00
+            </p>
+            <p class="mail-header">support@eshop.ua</p>
+        </div>
+        <div class="buttons-menu">
+            <a href="index.html" class="system-block">Системні блоки</a>
+            <a href="about.html" class="about-the-company">Про компанію</a>
+            <a href="contact.html" class="contacts">Контакти</a>
+        <div class="button-header">
+            <button class="magnifying-glass">
+                <img src="img/icons8-лупа-50.png" width="35" height="35" />
+            </button>
+            <div class="counter-favorite">
+                <button class="white-star">
+                    <img src="img/бела звезда.png" width="35" height="35" />
+                </button>
+                <div class="favorites-counter">0</div>
+            </div>
+            <div class="counter-cart">
+                <button class="cart" onclick="cardpage()">
+                    <img src="img/icons8-тележка-64.png" width="35" height="35" />
+                </button>
+                <div class="cart-counter">0</div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <main>
+    <div class="about-page">
+        <h1 class="name-about">Про компанію</h1>
+        <img src="img/banner.jpg" width="950" height="451" class="banner-img">
+        <p class="about-text-one">Компанія <span class="ESHOP-span">ESHOP</span> заснована у 2018 році у Києві. Це перше масштабне підприємство в Україні, що спеціалізується на виробництві кіберспортивної екіпіровки. Задовольнити потреби тих, хто живе грою або тільки знайомиться із віртуальним світом, це головна мета компанії. Наша місія — дати гравцю найкраще обладнання для перемоги.Наша команда щодня аналізує ринок та знає усе про нові технології геймінгу. Дизайнери та інженери попіклувались, щоб ваш комп’ютер відповідав високим стандартам ігрових PC, зберігши при цьому індивідуальний стиль. Виробництво розташовано у Києві, що забезпечує оперативне вирішення будь-яких технічних задач, миттєве реагування на запити клієнтів, а також полегшує та значно прискорює роботу логістики.
+        </p>
+        <p class="about-text-one">Ми активно співпрацюємо з провідними постачальниками комплектуючих, щоб гарантувати клієнтам тільки сертифіковані та надійні продукти. Усі пристрої проходять багаторівневе тестування, що дозволяє виявити навіть найменші недоліки до того, як товар потрапить до покупця.
+
+            ESHOP постійно інвестує в інновації, розробляючи власні рішення для підвищення продуктивності та зручності. Ми створюємо не просто комп’ютери, а інструменти для самореалізації, навчання, роботи та, звісно, перемог у віртуальному світі.
+            
+            Ми також відкриті до індивідуальних замовлень — кожен клієнт може створити унікальну конфігурацію, що відповідатиме його особистим вподобанням та потребам. Професійна команда підтримки завжди готова допомогти на кожному етапі — від вибору до обслуговування.
+        </p>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-ul">
+            <div class="footer-system-block">
+                <h1 class="footer-title">Системні блоки</h1>
+                <ul>
+                    <li><a href="index.html" class="footer-li">Всі</a></li>
+                    <li><a href="" class="footer-li">Gaming series</a></li>
+                    <li><a href="" class="footer-li">Office series</a></li>
+                </ul>
+            </div>
+            <div class="information">
+                <h1 class="footer-title">Інформація</h1>
+                <ul>
+                    <li><a href="about.html" class="footer-li">Про компанію</a></li>
+                    <li><a href="https://aclima.ua/uk/garantiyni-umovy" class="footer-li">Умови гарантії</a></li>
+                    <li><a href="https://www.qdpro.com.ua/catalogue/15020000#:~:text=%D0%A3%D0%BC%D0%BE%D0%B2%D0%B8%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8%20%D0%B2%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B0%D1%8E%D1%82%D1%8C%20%D0%BE%D0%B1%D0%BE%D0%B2'%D1%8F%D0%B7%D0%BA%D0%B8,%D0%B2%20%D1%80%D0%B0%D0%BC%D0%BA%D0%B0%D1%85%20%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80i%D0%B2%20%D0%BA%D1%83%D0%BFi%D0%B2%D0%BBi%2D%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D1%83." class="footer-li">Умови доставки</a></li>
+                </ul>
+            </div>
+            <div class="contacts-footer">
+                <h1 class="footer-title">Контакти</h1>
+                <p class="shop-footer">Сервісний центр/Магазин:</p>
+                <p class="geo-shop">Україна, м. Київ,<span class="logika-geo"> вул. Святослава<br> Логіки 22, офіс #1</span></p>
+                <p class="time-footer">Пн.-Пт. з 09:00 до 19:00<br>Сб. з 10:00 до 18:00</p>
+                <a href="tel:0999999999" class="number-footer">099 999 99 99</a>
+                <p class="five-rate">4.8</p>
+                <img src="img/google-map.svg" class="google-geo" width="41" height="41">
+                <img src="img/five-star.png" class="five-star-img" width="81" height="81">
+                <a href="https://www.google.com/maps/?hl=ru" class="review">457 відгуки на Google</a>
+                <p class="lock-site">2016-2025 © Eshop - on your side.<br> Український бренд ігрових комп’ютерів.</p>
+            </div>
+        </div>
+        <div class="bank-img">
+            <img src="img/f-pay1.svg" width="100" height="17">
+            <img src="img/f-pay2.svg" width="53" height="16">
+            <img src="img/f-pay4.svg" width="98" height="23">
+            <img src="img/f-pay5.svg" width="80" height="17">
+            <img src="img/f-pay7.svg" width="92" height="13">
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
