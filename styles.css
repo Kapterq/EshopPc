@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shippori+Antique+B1&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 body {
-    background-color: #100F0F
+    background-color: #100F0F;
 }
 
 .magnifying-glass {
@@ -450,7 +450,7 @@ color: #FFFFFF;
 .add-to-cart {
     position: relative;
     background: #5264DA;
-    border-radius: 15px;
+    border-radius: 8px;
     font-family: 'Inter';
     font-weight: 500;
     font-size: 17px;
@@ -472,7 +472,7 @@ color: #FFFFFF;
 .add-to-favorite{
     position: relative;
     background: #5264DA;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: 'Inter';
     font-weight: 500;
     padding-left: 6px;
@@ -916,4 +916,16 @@ footer{
 
 .name-pc:hover{
     color: #5264DA;
+}
+
+.black-pc-img{
+    cursor: pointer;
+}
+
+.three-pc{
+    cursor: pointer;
+}
+
+.related-item{
+    cursor: pointer;
 }
