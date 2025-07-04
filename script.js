@@ -44,7 +44,17 @@ function cardpage() {
   window.location.href = "cart.html";
 }
 
+function skipPage() {
+  window.location.href = "panzer.html";
+}
 
+function skipPage1() {
+  window.location.href = "crusader.html";
+}
+
+function skipPage2() {
+  window.location.href = "galaxy.html";
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const openBtn = document.querySelector(".magnifying-glass");
@@ -64,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     input.value = "";
     results.innerHTML = "";
   });
-  
+
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.style.display = "none";
@@ -98,6 +108,22 @@ document.addEventListener("DOMContentLoaded", () => {
         title.className = "search-card-title";
         title.textContent = name;
 
+        imgEl.style.cursor = "pointer";
+        title.style.cursor = "pointer";
+
+        const goToProduct = () => {
+          if (name.includes("Panzer")) {
+            skipPage();
+          } else if (name.includes("Crusader")) {
+            skipPage1();
+          } else if (name.includes("Galaxy")) {
+            skipPage2();
+          }
+        };
+
+        imgEl.addEventListener("click", goToProduct);
+        title.addEventListener("click", goToProduct);
+
         const seriesEl = document.createElement("div");
         seriesEl.className = "search-card-series";
         seriesEl.textContent = series;
@@ -112,19 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-function skipPage(){
-  window.location.href = "panzer.html";
-}
-
-function skipPage1(){
-  window.location.href = "crusader.html";
-}
-
-function skipPage2(){
-  window.location.href = "galaxy.html";
-}
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const buyBtn = document.querySelector(".buy-button");
