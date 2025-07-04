@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shippori+Antique+B1&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shippori+Antique+B1&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+main.product-section {
+  background-color: #100F0F;
+  min-height: 100vh;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.product-wrapper {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  background-color: #1A1A1A;
+  border-radius: 20px;
+  padding: 50px;
+  gap: 60px;
+}
+
+.image-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-photo {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+}
+
+.info-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-name {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.series-link {
+  color: #93A0F5;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.spec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  font-size: 18px;
+}
+
+.spec-list li {
+  color: #CCCCCC;
+  margin-bottom: 10px;
+}
+
+.spec-list span {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buy-button {
+  background: #5264DA;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  line-height: 45px;
+  color: #FFFFFF;
+  width: 180px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #3f51c1;
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.fav-button {
+  background: #5264DA;
+  border-radius: 10px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.fav-button:hover {
+  background-color: #3f51c1;
+}
+
+.fav-icon {
+  width: 31px;
+  height: 31px;
+}
+
+.related-products {
+  width: 100%;
+  max-width: 1300px;
+  color: #FFFFFF;
+}
+
+.related-products h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #93A0F5;
+}
+
+.related-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.related-item {
+  flex: 1;
+  background-color: #1F1F2B;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.related-item:hover {
+  background-color: #2b2c3a;
+}
