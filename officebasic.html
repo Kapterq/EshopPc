@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="stylepanzer.css" />
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <a href="index.html" class="project-name">ESHOP</a>
+            <p class="location">
+                Україна, м. Київ вул. Святослава Логіки 22, офіс #1
+            </p>
+            <p class="schedule">
+                <span class="schedule-text">Пн.-Пт. </span>з 09:00 до 19:00
+            </p>
+            <p class="schedule1">
+                <span class="schedule-text">Сб. </span>з 10:00 до 18:00
+            </p>
+            <p class="mail-header">support@eshop.ua</p>
+        </div>
+        <div class="buttons-menu">
+            <a href="index.html" class="system-block">Системні блоки</a>
+            <a href="about.html" class="about-the-company">Про компанію</a>
+            <a href="contact.html" class="contacts">Контакти</a>
+        <div class="button-header">
+            <button class="magnifying-glass">
+                <img src="img/icons8-лупа-50.png" width="35" height="35" />
+            </button>
+            <div class="counter-favorite">
+                <button class="white-star">
+                    <img src="img/бела звезда.png" width="35" height="35" />
+                </button>
+                <div class="favorites-counter">0</div>
+            </div>
+            <div class="counter-cart">
+                <button class="cart" onclick="cardpage()">
+                    <img src="img/icons8-тележка-64.png" width="35" height="35" />
+                </button>
+                <div class="cart-counter">0</div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+<main class="product-section">
+  <div class="product-wrapper">
+    <div class="image-side">
+      <img src="img/office1.png" alt="ESHOP Galaxy II v12.3" class="product-photo" width="313" height="450">
+    </div>
+    <div class="info-side">
+    <h1 class="product-name">ESHOP Office Basic</h1>
+    <a href="office.html" class="series-link">Office Series</a>
+
+    <ul class="spec-list">
+     <li><span>Процесор:</span> Core i3 12100</li>
+     <li><span>Відеокарта:</span> Intel UHD Graphics 7300</li>
+     <li><span>Тип памʼяті:</span> DDR4</li>
+     <li><span>Оперативна памʼять:</span> 8 Gb (2x4)</li>
+     <li><span>Накопичувач:</span> SSD 256 Gb</li>
+    </ul>
+
+    <div class="action-buttons">
+     <button class="buy-button">
+        <span>13 500 ₴</span>
+          <img src="img/icons8-тележка-64.png" alt="Купити" class="cart-icon" width="27" height="27">
+        </button>
+        <button class="fav-button">
+          <img src="img/бела звезда.png" alt="Улюблене" class="fav-icon" width="33" height="33">
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="related-products">
+    <h2>Схожі товари</h2>
+    <div class="related-grid">
+      <div class="related-item" onclick="skipPage()">PC i5 + RTX 4060</div>
+      <div class="related-item" onclick="skipPage1()">PC Ryzen 5 + RTX 3060</div>
+      <div class="related-item" onclick="skipPage2()">PC Ryzen 5 + RTX 4060</div>
+    </div>
+  </div>
+</main>
+
+    <footer>
+        <div class="footer-ul">
+            <div class="footer-system-block">
+                <h1 class="footer-title">Системні блоки</h1>
+                <ul>
+                    <li><a href="index.html" class="footer-li">Всі</a></li>
+                    <li><a href="" class="footer-li">Gaming series</a></li>
+                    <li><a href="" class="footer-li">Office series</a></li>
+                </ul>
+            </div>
+            <div class="information">
+                <h1 class="footer-title">Інформація</h1>
+                <ul>
+                    <li><a href="about.html" class="footer-li">Про компанію</a></li>
+                    <li><a href="https://aclima.ua/uk/garantiyni-umovy" class="footer-li">Умови гарантії</a></li>
+                    <li><a href="https://www.qdpro.com.ua/catalogue/15020000#:~:text=%D0%A3%D0%BC%D0%BE%D0%B2%D0%B8%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8%20%D0%B2%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B0%D1%8E%D1%82%D1%8C%20%D0%BE%D0%B1%D0%BE%D0%B2'%D1%8F%D0%B7%D0%BA%D0%B8,%D0%B2%20%D1%80%D0%B0%D0%BC%D0%BA%D0%B0%D1%85%20%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80i%D0%B2%20%D0%BA%D1%83%D0%BFi%D0%B2%D0%BBi%2D%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D1%83." class="footer-li">Умови доставки</a></li>
+                </ul>
+            </div>
+            <div class="contacts-footer">
+                <h1 class="footer-title">Контакти</h1>
+                <p class="shop-footer">Сервісний центр/Магазин:</p>
+                <p class="geo-shop">Україна, м. Київ,<span class="logika-geo"> вул. Святослава<br> Логіки 22, офіс #1</span></p>
+                <p class="time-footer">Пн.-Пт. з 09:00 до 19:00<br>Сб. з 10:00 до 18:00</p>
+                <a href="tel:0999999999" class="number-footer">099 999 99 99</a>
+                <p class="five-rate">4.8</p>
+                <img src="img/google-map.svg" class="google-geo" width="41" height="41">
+                <img src="img/five-star.png" class="five-star-img" width="81" height="81">
+                <a href="https://www.google.com/maps/?hl=ru" class="review">457 відгуки на Google</a>
+                <p class="lock-site">2016-2025 © Eshop - on your side.<br> Український бренд ігрових комп’ютерів.</p>
+            </div>
+        </div>
+        <div class="bank-img">
+            <img src="img/f-pay1.svg" width="100" height="17">
+            <img src="img/f-pay2.svg" width="53" height="16">
+            <img src="img/f-pay4.svg" width="98" height="23">
+            <img src="img/f-pay5.svg" width="80" height="17">
+            <img src="img/f-pay7.svg" width="92" height="13">
+        </div>
+    </footer>
+    <div id="searchModal" class="modal-overlay">
+        <div class="modal-box">
+          <button id="closeSearchBtn" class="close-btn">×</button>
+          <input type="text" id="searchInput" placeholder="Пошук комп'ютера..." />
+          <div id="searchResults" class="search-results"></div>
+        </div>
+      </div>                     
+    <script src="script.js"></script>
+</body>
+</html>

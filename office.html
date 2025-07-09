@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="styleoffice.css" />
 </head>
 
 <body>
@@ -47,12 +48,11 @@
         </div>
     </div>
     </header>
-    <main>
-        <div class="category-pc">
-            <a href="" class="all">Всі</a>
-            <a href="index.html" class="gaming-series">Gaming Series</a>
-            <a href="office.html" class="office-series">Office Series</a>
-        </div>
+<div class="category-pc">
+    <a href="" class="all">Всі</a>
+    <a href="index.html" class="gaming-series">Gaming Series</a>
+    <a href="office.html" class="office-series">Office Series</a>
+</div>
 <div class="menu-range-price">
   <h1 class="price-range-title">Фільтр по ціні</h1>
   <label>Мінімальна ціна</label><br>
@@ -69,93 +69,93 @@
     <div id="modalResults"></div>
   </div>
 </div>
-        <div class="cards-pc">
-            <div class="buy-menu">
-            <h1 class="name-cards-menu">Ігрові комп'ютери</h1>
-            <div class="white-card-pc">
-                <a href="panzer.html">
-                <img src="img/whitepc.png" width="313" height="313">
-                </a>
-                <h1 class="name-pc" onclick="skipPage()">ESHOP Panzer II v9.6</h1>
-                <a href="index.html" class="class-siries">Gaming Series</a>
-                <p class="cpu">Процесор</p>
-                <img src="img/процессор.svg" class="cpu-img">
-                <p class="cpu-name">Core i5 12400F</p>
-                <p class="gpu">Відеокарта</p>
-                <img src="img/видеокарта.svg" class="gpu-img">
-                <p class="gpu-name">RTX 4060 8GB Palit Infinity </br>2 OC</p>
-                <p class="memory">Тип пам'яті</p>
-                <img src="img/оперативка.svg" class="memory-img">
-                <p class="memory-name">DDR4</p>
-                <p class="oper-memory">Оперативна пам'ять</p>
-                <img src="img/оперативка.svg" class="type-memory-img">
-                <p class="oper-memory-name">32 Gb (2x16)</p>
-                <p class="hdd">Накопичувач</p>
-                <img src="img/hdd.svg" class="ssd-img">
-                <p class="hdd-name">SSD 1Tb</p>
-                <button class="add-to-cart"><span class="price">38 901 ₴</span>
+<div class="cards-pc">
+    <div class="buy-menu">
+        <h1 class="name-cards-menu">Офісні комп'ютери</h1>
+        <div class="white-card-pc">
+            <img src="img/office1.png" width="313" height="313" class="three-pc" onclick="officePage1()">
+            <h1 class="name-pc" onclick="officePage1()">ESHOP Office Basic</h1>
+            <a href="office.html" class="class-siries">Office Series</a>
+            <p class="cpu">Процесор</p>
+            <img src="img/процессор.svg" class="cpu-img">
+            <p class="cpu-name">Core i3 12100</p>
+            <p class="gpu">Відеокарта</p>
+            <img src="img/видеокарта.svg" class="gpu-img">
+            <p class="gpu-name">Intel UHD Graphics 7300</p>
+            <p class="memory">Тип пам'яті</p>
+            <img src="img/оперативка.svg" class="memory-img">
+            <p class="memory-name">DDR4</p>
+            <p class="oper-memory">Оперативна пам'ять</p>
+            <img src="img/оперативка.svg" class="type-memory-img">
+            <p class="oper-memory-name">8 Gb (2x4)</p>
+            <p class="hdd">Накопичувач</p>
+            <img src="img/hdd.svg" class="ssd-img">
+            <p class="hdd-name">SSD 256 Gb</p>
+            <button class="add-to-cart"><span class="price">13 500 ₴</span>
                 <img src="img/icons8-тележка-64.png" width="27px" height="27px" class="buy-img">
-                </button>
-                <button class="add-to-favorite">
-                    <img src="img/бела звезда.png" width="33" height="33" class="favorite-img">
-                </button>
-            </div>
-            <div class="white-card-pc">
-                <img src="img/black-pc.png" width="313" height="313" class="black-pc-img" onclick="skipPage1()">
-                <h1 class="name-pc" id="name-pc-id" onclick="skipPage1()">ESHOP Great Crusader</h1>
-                <a href="index.html" class="class-siries">Gaming Series</a>
-                <p class="cpu">Процесор</p>
-                <img src="img/процессор.svg" class="cpu-img">
-                <p class="cpu-name">Ryzen 5 5600</p>
-                <p class="gpu">Відеокарта</p>
-                <img src="img/видеокарта.svg" class="gpu-img">
-                <p class="gpu-name">RTX3060 12GB Asus Dual <br> V2</p>
-                <p class="memory">Тип пам'яті</p>
-                <img src="img/оперативка.svg" class="memory-img">
-                <p class="memory-name">DDR4</p>
-                <p class="oper-memory">Оперативна пам'ять</p>
-                <img src="img/оперативка.svg" class="type-memory-img">
-                <p class="oper-memory-name">32 Gb (2x16)</p>
-                <p class="hdd">Накопичувач</p>
-                <img src="img/hdd.svg" class="ssd-img">
-                <p class="hdd-name">SSD 1Tb</p>
-                <button class="add-to-cart"><span class="price">40 581 ₴</span>
+            </button>
+            <button class="add-to-favorite">
+                <img src="img/бела звезда.png" width="33" height="33" class="favorite-img">
+            </button>
+        </div>
+
+        <div class="white-card-pc">
+            <img src="img/office2.png" width="313" height="313" class="black-pc-img" onclick="officePage1()">
+            <h1 class="name-pc" onclick="skipPage1()">ESHOP Office Pro</h1>
+            <a href="office.html" class="class-siries">Office Series</a>
+            <p class="cpu">Процесор</p>
+            <img src="img/процессор.svg" class="cpu-img">
+            <p class="cpu-name">Core i5 12400</p>
+            <p class="gpu">Відеокарта</p>
+            <img src="img/видеокарта.svg" class="gpu-img">
+            <p class="gpu-name">Intel UHD Graphics 7300</p>
+            <p class="memory">Тип пам'яті</p>
+            <img src="img/оперативка.svg" class="memory-img">
+            <p class="memory-name">DDR4</p>
+            <p class="oper-memory">Оперативна пам'ять</p>
+            <img src="img/оперативка.svg" class="type-memory-img">
+            <p class="oper-memory-name">16 Gb (2x8)</p>
+            <p class="hdd">Накопичувач</p>
+            <img src="img/hdd.svg" class="ssd-img">
+            <p class="hdd-name">SSD 512 Gb</p>
+            <button class="add-to-cart"><span class="price">18 200 ₴</span>
                 <img src="img/icons8-тележка-64.png" width="27px" height="27px" class="buy-img">
-                </button>
-                <button class="add-to-favorite">
-                    <img src="img/бела звезда.png" width="33" height="33" class="favorite-img">
-                </button>
-            </div>
-            <div class="white-card-pc">
-                <img src="img/black-pc-cl.png" width="313" height="313" onclick="skipPage2()" class="three-pc">
-                <h1 class="name-pc" onclick="skipPage2()">ESHOP Galaxy II v12.3</h1>
-                <a href="index.html" class="class-siries">Gaming Series</a>
-                <p class="cpu">Процесор</p>
-                <img src="img/процессор.svg" class="cpu-img">
-                <p class="cpu-name">Ryzen 5 7500F</p>
-                <p class="gpu">Відеокарта</p>
-                <img src="img/видеокарта.svg" class="gpu-img">
-                <p class="gpu-name">RTX4060 8GB Asus Dual <br> OC V8</p>
-                <p class="memory">Тип пам'яті</p>
-                <img src="img/оперативка.svg" class="memory-img">
-                <p class="memory-name">DDR5</p>
-                <p class="oper-memory">Оперативна пам'ять</p>
-                <img src="img/оперативка.svg" class="type-memory-img">
-                <p class="oper-memory-name">32 Gb (2x16)</p>
-                <p class="hdd">Накопичувач</p>
-                <img src="img/hdd.svg" class="ssd-img">
-                <p class="hdd-name">SSD 1Tb</p>
-                <button class="add-to-cart"><span class="price">46 574 ₴</span>
+            </button>
+            <button class="add-to-favorite">
+                <img src="img/бела звезда.png" width="33" height="33" class="favorite-img">
+            </button>
+        </div>
+
+        <div class="white-card-pc">
+            <img src="img/office3.png" width="313" height="313" class="three-pc" onclick="officePage1()">
+            <h1 class="name-pc" onclick="">ESHOP Office Ultra</h1>
+            <a href="office.html" class="class-siries">Office Series</a>
+            <p class="cpu">Процесор</p>
+            <img src="img/процессор.svg" class="cpu-img">
+            <p class="cpu-name">Ryzen 5 5600G</p>
+            <p class="gpu">Відеокарта</p>
+            <img src="img/видеокарта.svg" class="gpu-img">
+            <p class="gpu-name">AMD Radeon Vega 700 Pro</p>
+            <p class="memory">Тип пам'яті</p>
+            <img src="img/оперативка.svg" class="memory-img">
+            <p class="memory-name">DDR4</p>
+            <p class="oper-memory">Оперативна пам'ять</p>
+            <img src="img/оперативка.svg" class="type-memory-img">
+            <p class="oper-memory-name">16 Gb (2x8)</p>
+            <p class="hdd">Накопичувач</p>
+            <img src="img/hdd.svg" class="ssd-img">
+            <p class="hdd-name">SSD 512 Gb</p>
+            <button class="add-to-cart"><span class="price">19 800 ₴</span>
                 <img src="img/icons8-тележка-64.png" width="27px" height="27px" class="buy-img">
-                </button>
-                <button class="add-to-favorite">
-                    <img src="img/бела звезда.png" width="33" height="33" class="favorite-img">
-                </button>
-            </div>
+            </button>
+            <button class="add-to-favorite">
+                <img src="img/бела звезда.png" width="33" height="33" class="favorite-img">
+            </button>
+        </div>
             <div class="button-menu-scip">
-                <button class="slide-one" onclick="pcpage1()">1</button>
-                <button class="slide-two" onclick="pcpage2()">2</button>
-                <button class="slide-three" onclick="pcpage3()">3</button>
+                <button class="slide-one">1</button>
+                <button class="slide-two">2</button>
+                <button class="slide-three">3</button>
             </div>
             </div>
         </div>

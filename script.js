@@ -56,6 +56,22 @@ function skipPage2() {
   window.location.href = "galaxy.html";
 }
 
+function officePage1(){
+  window.location.href = "officebasic.html"
+}
+
+function pcpage2(){
+  window.location.href = "pcpage2.html"
+}
+
+function pcpage1(){
+  window.location.href = "index.html"
+}
+
+function pcpage3(){
+  window.location.href = "pcpage3.html"
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const openBtn = document.querySelector(".magnifying-glass");
   const modal = document.getElementById("searchModal");
@@ -182,4 +198,98 @@ document.addEventListener("DOMContentLoaded", () => {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     counter.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
   }
+});
+
+async function getCards() {
+  const pages = ['index.html', 'pcpage1.html', 'pcpage2.html', 'pcpage3.html', 'office.html'];
+  let cards = [];
+  for (let url of pages) {
+    const res = await fetch(url);
+    const text = await res.text();
+    const div = document.createElement('div');
+    div.innerHTML = text;
+    const cardEls = div.querySelectorAll('.white-card-pc');
+    cardEls.forEach(card => {
+      const nameEl = card.querySelector('.name-pc');
+      const name = nameEl?.innerText.trim();
+      const price = parseFloat(card.querySelector('.price')?.innerText.replace(/[^\d]/g, ''));
+      const img = card.querySelector('img')?.getAttribute('src');
+      const series = card.querySelector('.class-siries')?.innerText.trim();
+      const onclickAttr = nameEl?.getAttribute('onclick');
+
+      if (name && price && img && series && onclickAttr) {
+        cards.push({ name, price, img, series, onclick: onclickAttr });
+      }
+    });
+  }
+  return cards;
+}
+
+document.getElementById('filterBtn').addEventListener('click', async () => {
+  const min = parseInt(document.getElementById('minPrice').value) || 0;
+  const max = parseInt(document.getElementById('maxPrice').value) || Infinity;
+  const cards = await getCards();
+  const filtered = cards.filter(c => c.price >= min && c.price <= max);
+  const modal = document.getElementById('modal');
+  const modalResults = document.getElementById('modalResults');
+  modalResults.innerHTML = '';
+
+  if (filtered.length === 0) {
+    modalResults.innerHTML = '<p>Нічого не знайдено</p>';
+  } else {
+    filtered.forEach(c => {
+      const el = document.createElement('div');
+      el.className = 'item';
+
+      const img = document.createElement('img');
+      img.src = c.img;
+
+      const info = document.createElement('div');
+
+      const h3 = document.createElement('h3');
+      h3.innerText = c.name;
+      h3.style.cursor = 'pointer';
+      h3.addEventListener('click', () => {
+        eval(c.onclick);
+      });
+
+      const p = document.createElement('p');
+      p.innerText = c.series;
+      p.style.color = '#93A0F5';
+      p.style.cursor = 'pointer';
+      p.addEventListener('click', () => {
+        if (c.series.toLowerCase().includes('office')) {
+          window.open('office.html', '_blank');
+        } else {
+          window.open('index.html', '_blank');
+        }
+      });
+
+      const price = document.createElement('span');
+      price.innerText = `${c.price} ₴`;
+      price.style.display = 'block';
+      price.style.color = '#fff';
+
+      info.appendChild(h3);
+      info.appendChild(p);
+      info.appendChild(price);
+      el.appendChild(img);
+      el.appendChild(info);
+      modalResults.appendChild(el);
+    });
+  }
+
+  document.body.classList.add('modal-open');
+  modal.style.display = 'block';
+});
+
+document.getElementById('modalClose').addEventListener('click', () => {
+  document.getElementById('modal').style.display = 'none';
+  document.body.classList.remove('modal-open');
+});
+
+document.querySelectorAll('.price-input').forEach(input => {
+  input.addEventListener('input', e => {
+    e.target.value = e.target.value.replace(/[.,]/g, '');
+  });
 });
