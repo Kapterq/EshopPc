@@ -9,15 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function updateCounter() {
       if (counter) {
-        counter.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
+        counter.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);  // считает общее колиство товаров и отображает
       }
     }
   
+    // функция для отрисовки корзины:
     function renderCart() {
       cartContainer.innerHTML = "";
   
       if (cart.length === 0) {
-        cartContainer.innerHTML = "<p>Корзина порожня.</p>";
+        cartContainer.innerHTML = "<p>Корзина порожня.</p>"; // если пустая корзина
         totalPriceElem.textContent = "";
         payBtn.style.display = "none";
         clearBtn.style.display = "none";
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   
       cart.forEach((item, index) => {
-        const card = document.createElement("div");
+        const card = document.createElement("div"); // если есть товары
         card.className = "cart-item";
         card.innerHTML = `
           <img src="${item.img}" width="100" alt="${item.name}">
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const priceNumber = parseFloat(item.price.replace(/[^\d,.-]/g, "").replace(/\s+/g, '').replace(',', '.'));
         return acc + priceNumber * item.quantity;
       }, 0);
-  
+      // считаем общую сумму
       totalPriceElem.textContent = `Загальна сума: ${total.toLocaleString('ru-RU')} ₴`;
       payBtn.style.display = "inline-block";
       clearBtn.style.display = "inline-block";
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       if (e.target.classList.contains("remove")) {
         cart.splice(index, 1);
-      } else if (e.target.classList.contains("plus")) {
+      } else if (e.target.classList.contains("plus")) { // обработка кнопок в корзине
         cart[index].quantity++;
       } else if (e.target.classList.contains("minus")) {
         if (cart[index].quantity > 1) cart[index].quantity--;
@@ -68,14 +69,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
     clearBtn.addEventListener("click", () => {
-      localStorage.removeItem("cart");
+      localStorage.removeItem("cart");  // очистить корзину
       cart = [];
       renderCart();
     });
   
     payBtn.addEventListener("click", () => {
       alert("Дякуємо за покупку!");
-      localStorage.removeItem("cart");
+      localStorage.removeItem("cart");  //оплатить
       cart = [];
       renderCart();
     });
